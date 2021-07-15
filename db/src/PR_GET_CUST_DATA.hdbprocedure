@@ -1,0 +1,13 @@
+PROCEDURE "PR_GET_CUST_DATA"(in custid INTEGER )
+   LANGUAGE SQLSCRIPT
+   SQL SECURITY INVOKER
+   --DEFAULT SCHEMA <default_schema_name>
+   READS SQL DATA AS
+BEGIN
+   /*************************************
+       Write your procedure logic
+   *************************************/
+
+Select * from "CUSTOMERS" where "ID" = custid ;
+Select count(*) from "CUSTOMERS";
+END

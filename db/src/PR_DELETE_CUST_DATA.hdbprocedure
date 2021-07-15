@@ -1,0 +1,16 @@
+PROCEDURE "PR_DELETE_CUST_DATA"(in custid INTEGER )
+   LANGUAGE SQLSCRIPT
+   SQL SECURITY INVOKER
+   --DEFAULT SCHEMA <default_schema_name>
+   --READS SQL DATA 
+   AS
+BEGIN
+   /*************************************
+       Write your procedure logic
+   *************************************/
+
+  DELETE FROM  "CUSTOMERS"  WHERE "ID" = :custid;
+       Select * from "CUSTOMERS";
+        select count(*) from "CUSTOMERS";
+
+END

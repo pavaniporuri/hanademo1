@@ -1,0 +1,11 @@
+COLUMN TABLE "CUSTOMERS" (
+id INTEGER,
+  name VARCHAR(30) NOT NULL,
+  "City" NVARCHAR(100),
+  gender CHAR(6),
+  number_of_trips SMALLINT,
+  loyalty_member BOOLEAN,
+  balance NUMERIC(6,2),
+  PRIMARY KEY (id)
+
+)
